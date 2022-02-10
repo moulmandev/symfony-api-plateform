@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="00ebb07a-b9c9-467f-a96e-983f0e6006f2" name="ovh">
+        <fileTransfer rootFolder="/var/www/symfony.moulmandev.fr" accessType="SFTP" host="ts.dreamfire.fr" port="22" sshConfigId="f77c5955-216b-4128-a2b2-b289fe76e1f1" sshConfig="root@ts.dreamfire.fr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
