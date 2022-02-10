@@ -3,11 +3,13 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use App\Repository\StockRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: StockRepository::class)]
 #[ApiResource]
+#[ApiFilter(SearchFilter::class, properties: ['product' => 'partial', 'shop' => 'partial'])]
 class Stock
 {
     #[ORM\Id]
