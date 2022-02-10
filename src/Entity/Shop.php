@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ShopRepository::class)]
 #[ApiResource]
-#[ApiFilter(SearchFilter::class, properties: ['products' => 'partial'])]
+#[ApiFilter(SearchFilter::class, properties: ['products' => 'exact'])]
 class Shop
 {
     #[ORM\Id]
